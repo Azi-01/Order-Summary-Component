@@ -43,8 +43,8 @@
 .card{
     background-color: white;
     height: auto;
-    width: 25vw;
-    max-width: 600px;
+    width: 30vw;
+    max-width: 700px;
     border-radius: 20px;
     overflow: hidden;
 }

@@ -52,4 +52,4 @@ I used basic html and css properties to build this. My workflow was desktop firs
 ## Author
 
 - Frontend Mentor - [@Azi-01](https://www.frontendmentor.io/profile/Azi-01)
--Instagram - [@yourusername](https://www.instagram.com/azi00.00)
+-Instagram - [@Azi00.00](https://www.instagram.com/azi00.00)
