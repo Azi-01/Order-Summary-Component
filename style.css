@@ -1,0 +1,190 @@
+@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+
+/*Colors*/
+
+:root{
+/*Primary*/
+
+--Pale_blue: hsl(225, 100%, 94%);
+--Bright_blue: hsl(245, 75%, 52%);
+
+/* Neutral */
+
+--Very_pale_blue: hsl(225, 100%, 98%);
+--Desaturated_blue: hsl(224, 23%, 55%);
+--Dark_blue: hsl(223, 47%, 23%);
+}
+
+/* Root Document */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Main */
+
+.main-div{
+    height: 100vh;
+    background: url('./images/pattern-background-desktop.svg') no-repeat;
+    background-size: 100% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper{
+    background: var(--Pale_blue);
+}
+
+/* Card  */
+
+.card{
+    background-color: white;
+    height: auto;
+    width: 25vw;
+    max-width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-image img{
+    width: 100%;
+}
+
+.text-content{
+    padding: 2rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content h2{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--Dark_blue);
+}
+
+.text-content p{
+    padding: 1rem 2rem 2rem 1rem;
+    font: 500;
+    font-size: 1.1rem;
+    color: var(--Desaturated_blue);
+    text-align: center;
+    line-height: 25px;
+}
+
+/* Card Buttons  */
+
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Annual Plan Button  */
+
+.annual-plan{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very_pale_blue);
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    border-radius: 20px;
+}
+
+.text-wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-text h4{
+    color: var(--Dark_blue);
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.plan-text p{
+    font-weight: 500;
+    color: var(--Desaturated_blue);
+}
+
+.annual-plan a{
+    font-weight: 700;
+    color: var(--Bright_blue);
+}
+
+.annual-plan a:hover, a:focus{
+    color: var(--Desaturated_blue);
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Payment Button  */
+
+.payment-btn{
+    background-color: var(--Bright_blue);
+    color: white;
+    width: 85%;
+    border: none;
+    padding: 1.2rem;
+    margin: 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 1px 10px 20px 2px rgba(55, 80, 146, 0.4);
+}
+
+.payment-btn:hover, .payment-btn:focus{
+    cursor: pointer;
+    background-color: var(--Desaturated_blue);
+    color: white;
+}
+
+/* Cancel Button  */
+
+.cancel-btn{
+    background-color: transparent;
+    color: var(--Desaturated_blue);
+    width: 85%;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cancel-btn:hover, :focus{
+    color: var(--Dark_blue);
+}
+
+
+/* Media Queries  */
+
+@media only screen and (max-width: 1080px){
+    .main-div{
+        background: url('./images/pattern-background-mobile.svg') no-repeat cover;
+    }
+    .card{
+        width: 90%;
+    }
+
+    .text-content{
+        padding: 2rem 0.5rem 1rem 0.5rem;
+    }
+
+    .annual-plan{
+        font-size: 12px;
+    }
+    
+    .text-wrapper{
+        width: 60%;
+    }
+
+}
