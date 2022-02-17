@@ -54,7 +54,7 @@
 }
 
 .text-content{
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,8 +68,8 @@
 }
 
 .text-content p{
-    padding: 1rem 2rem 2rem 1rem;
-    font: 500;
+    padding: 1rem 2rem;
+    font-weight: 500;
     font-size: 1.1rem;
     color: var(--Desaturated_blue);
     text-align: center;
@@ -93,15 +93,18 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--Very_pale_blue);
-    padding: 1.5rem 1rem 1.5rem 1rem;
+    padding: 1.5rem 1rem;
     border-radius: 20px;
 }
 
 .text-wrapper{
-    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.plan-text{
+    padding: 0 2rem;
 }
 
 .plan-text h4{
